@@ -1,0 +1,388 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+     h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 7vh;
+      padding-top: 2vh;
+    }
+
+    h3{
+      color: dimgrey;
+      font-size: 3.5vh;
+      font-style: oblique;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;      
+    }
+
+    body {
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+    
+    .section {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .container {
+      position: relative;
+      width: 80%;
+      height: 90%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .first-section {
+      background: linear-gradient(0deg, #d62612 0, #d62612 33.33%, #fff 33.33%, #fff 66.66%, #00966e 66.66%);
+    }
+
+    .first-section .navbar{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: absolute;
+      min-width: 200px;
+      width: 20vw;
+      height: 7vh;
+      right: 0;
+      background-color: #d62612;
+      border-radius: 0 0 0 20px;
+      align-items: text;
+    }
+
+    .first-section .navbar img {
+      width: 7vh;
+    }
+
+    .first-section .text {
+      position: absolute;
+      top: 10%;
+      border-left: 5px solid #fff;
+      margin-top: 0px;
+      padding-left: 10px;
+    }
+
+    .first-section .text h1{
+      margin: 0;
+      text-align: inherit;
+    }
+
+    .car-image {
+      position: absolute;
+      right: -10%;
+      top: 50%;
+      width: 80vh;
+      transform: translate(0, -50%);
+    }
+
+    .contacts {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: absolute; 
+      height: 30%;
+      bottom: 0px;
+    }
+
+    .contacts .number-icons {
+      position: absolute;
+      top: 30px;
+      left: 30%;
+      align-self: center;
+    }
+
+    .contacts .number-icons img {
+      width: 4vh;
+    }
+
+    .contacts h4 {
+      font-size: 3vh;
+      color: #fff;
+      align-self: center;
+    }
+
+    .numbers {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .numbers img {
+      display: inline-block;
+      width: 20vh;
+    }
+
+    .numbers span {
+      display: inline-block;
+      font-size: 3vh;
+      color: #fff;
+      margin: 0 10px;
+    }
+
+    .numbers .line {
+      display: inline-block;
+      height: 5vh;
+      border: 2px solid #fff;
+    }
+
+
+    .second-section {
+      position: relative;
+      background-color: #00966e;
+    } 
+
+
+    ul {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4vh;
+      color: #fff;
+      line-height: 7vh;
+    }
+
+    .button {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 0);
+      border-radius: 20px;
+      background-color: #d62612;
+      border: none;
+      color: #fff;
+      text-align: center;
+      font-size: 20px;
+      padding: 20px;
+      width: fit-content;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal h1{
+      color: #00966e;
+      border-bottom: 2px solid #00966e;
+      margin-bottom: 30px;
+    }
+
+    .modal.show {
+      display: block;
+      opacity: 1;
+    }
+
+    .modal-content {
+      position: absolute;
+      background-color: #fff;
+      padding: 20px 50px;
+      height: 80%;
+      width: 60%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: auto;
+    }
+
+    .schedule {
+      position: relative;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .schedule h4 {
+      width: fit-content;
+      font-size: 3vh;
+      margin: auto;
+      margin-bottom: 7px;
+      border-bottom: 1px solid;
+    }
+
+    table {
+      margin: 0 auto;
+    }
+
+    td {
+      padding: 2px 50px;
+      font-size: 2.5vh;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+
+    .third-section {
+      background-color: #fff;
+    } 
+
+    .third-section h1 {
+      color: #00966e;
+    }
+
+    .scroll-container {
+      background-color: #333;
+      overflow: auto;
+      white-space: nowrap;
+      padding: 10px 5px;
+      margin-top: 5vh;
+      width: 100%;
+      height: 70%;
+    }
+
+    .scroll-container img {
+      height: 99%;
+      padding: 2px;
+      border-radius: 15px;
+    }
+
+    .third-section h3 {
+      font-size: 2.5vh;
+      margin: 10px;
+    }
+
+
+    
+    @media screen and (max-width: 800px) {
+      body{
+        min-width: 370px;
+      }
+
+      h1 {
+        font-size: 5vh;
+      }
+
+      h3{
+        font-size: 3vh;
+      }
+
+      .first-section .navbar img {
+        width: 5vh;
+      }
+
+      .car-image {
+        right: -10%;
+        width: 40vh;
+      }
+
+      .contacts {
+        width: 100%;
+      }
+
+      .contacts .number-icons {
+        top: 15px;
+      }
+
+      .numbers {
+        display: block;
+      }
+
+      .numbers img {
+        width: 15vw;
+        max-width: 80px;
+      }
+
+      .numbers span {
+        margin-bottom: 5px;
+      }
+
+      .numbers .line {
+        display: block;
+        height: 0;
+        border: none;
+      }
+
+      ul {
+        min-width: 300px;
+        font-size: 3vh;
+        line-height: 6vh;
+      }
+
+      .button {
+        font-size: 15px;
+        padding: 20px;
+        width: fit-content;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        white-space: nowrap;
+      }
+
+      .scroll-container {
+        margin-top: 12vh;
+        height: 55%;
+      }
+
+      .modal-content {
+        padding: 10px 5px;
+        max-height: 80%;
+        height: fit-content;
+        width: 80%;
+      }
+
+      .modal-content h1 {
+        font-size: 7vw;
+      }
+
+      .schedule h4 {
+        font-size: 5vw;
+        margin-bottom: 7px;
+      }
+
+      td {
+        padding: 2px 15px;
+        font-size: 4vw;
+      }
+    }
