@@ -11,6 +11,13 @@
       padding-top: 2vh;
     }
 
+    h2 {
+      text-align: center;
+      color: #fff;
+      font-size: 7vh;
+      padding-top: 2vh;
+    }
+
     h3{
       color: dimgrey;
       font-size: 3.5vh;
@@ -148,7 +155,7 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      font-size: 4vh;
+      font-size: 3.5vh;
       color: #fff;
       line-height: 7vh;
     }
@@ -209,7 +216,7 @@
       transition: opacity 0.3s ease;
     }
 
-    .modal h1{
+    .modal h2{
       color: #00966e;
       border-bottom: 2px solid #00966e;
       margin-bottom: 30px;
@@ -268,7 +275,7 @@
       background-color: #fff;
     } 
 
-    .third-section h1 {
+    .third-section h2 {
       color: #00966e;
     }
 
@@ -301,6 +308,10 @@
       }
 
       h1 {
+        font-size: 5vh;
+      }
+
+      h2 {
         font-size: 5vh;
       }
 
@@ -372,7 +383,7 @@
         width: 80%;
       }
 
-      .modal-content h1 {
+      .modal-content h2 {
         font-size: 7vw;
       }
 
